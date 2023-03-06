@@ -1,0 +1,11 @@
+name: Example workflow for dotNET using Snyk
+on: push
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Run Snyk to check for vulnerabilities
+        uses: snyk/actions/dotnet@master
+        env:
+          SNYK_TOKEN: $f853b6e4-d988-46f6-aa3f-174b5346b670

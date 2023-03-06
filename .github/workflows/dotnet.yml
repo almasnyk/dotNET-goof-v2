@@ -26,7 +26,7 @@ jobs:
     - name: Snyk Vulnerability Scan
       uses: snyk/actions@0.3.0
       env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $f853b6e4-d988-46f6-aa3f-174b5346b670
       with:
         command: monitor
         args: --all-projects
